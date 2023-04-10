@@ -1,0 +1,50 @@
+body {
+  background-color: #00308f;
+}
+
+h1 {
+  background-color: #3a6cbc;
+  width: 800px;
+  padding: 20px 40px;
+  margin: 30px auto;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.main-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.pounds-grid-item {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.kg-grid-item {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+.stone-grid-item {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+.meter-grid-item {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.feet-grid-item {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
