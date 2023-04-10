@@ -3,6 +3,29 @@
 window.addEventListener("load", initApp);
 
 function initApp() {
+  /************************* Reset btn *************************************/
+  const resetbtn = document.querySelector("#reset");
+  resetbtn.addEventListener("click", resetInput);
+
+  //Creates an array of all the input id's
+  function resetInput() {
+    const inputIds = [
+      "input-fahrenheit",
+      "input-kelvin",
+      "input-celcius",
+      "input-pounds",
+      "input-kilos",
+      "input-stones",
+      "input-feet",
+      "input-meters",
+      "input-yards",
+    ];
+    //loops through the array and adds each id to the DOM and set it to an empty string
+    inputIds.forEach(function (id) {
+      const input = document.querySelector(`#${id}`);
+      input.value = "";
+    });
+  }
   /************************* Weights btns *************************************/
 
   //Make pounds button clickable
