@@ -7,6 +7,7 @@ h1 {
   padding: 20px 40px;
   margin: 0;
   text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .main-grid-container {
@@ -20,18 +21,29 @@ h1 {
 
 main div {
   padding: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .weights {
   background: #a2a8d3;
 }
+.weights:hover {
+  background-color: #ef7e56;
+}
 
 .lengths {
   background: #38598b;
 }
+.lengths:hover {
+  background-color: #ef7e56;
+}
 
 .temperatures {
   background: #113f67;
+}
+
+.temperatures:hover {
+  background-color: #ef7e56;
 }
 .pounds-grid-item {
   grid-row-start: 1;
